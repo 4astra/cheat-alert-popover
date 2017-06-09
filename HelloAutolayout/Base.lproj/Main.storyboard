@@ -89,6 +89,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="1" green="0.69453036239999999" blue="0.14543999599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5kg-Sc-hA9" kind="presentation" id="px8-5t-DT5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,7 +170,65 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="816.79999999999995" y="138.98050974512745"/>
+            <point key="canvasLocation" x="926" y="142"/>
+        </scene>
+        <!--Detail2 View Ctr-->
+        <scene sceneID="iFJ-7Y-RX3">
+            <objects>
+                <viewController storyboardIdentifier="Detail2ViewCtr" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5kg-Sc-hA9" customClass="Detail2ViewCtr" customModule="CheatAlertPopover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="73b-CM-3V4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Icx-pO-gNt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5e9-BT-3uJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4c-z6-ubK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dh3-hN-PYc" appends="YES" id="UgB-QT-xHd"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wl-BP-Qg7">
+                                <rect key="frame" x="127" y="367" width="120" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjM-A6-POa">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.66274509800000003" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="PQD-tp-n5W"/>
+                                    <constraint firstAttribute="width" constant="120" id="UX8-M7-NXN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="9wl-BP-Qg7" firstAttribute="centerX" secondItem="5e9-BT-3uJ" secondAttribute="centerX" id="2M7-Bh-9SR"/>
+                            <constraint firstItem="Icx-pO-gNt" firstAttribute="top" secondItem="G4c-z6-ubK" secondAttribute="bottom" id="46W-Yg-NzW"/>
+                            <constraint firstItem="Icx-pO-gNt" firstAttribute="top" secondItem="9wl-BP-Qg7" secondAttribute="bottom" constant="100" id="Gaa-fe-yov"/>
+                            <constraint firstItem="G4c-z6-ubK" firstAttribute="top" secondItem="5e9-BT-3uJ" secondAttribute="top" id="Gjz-jG-1at"/>
+                            <constraint firstItem="G4c-z6-ubK" firstAttribute="leading" secondItem="5e9-BT-3uJ" secondAttribute="leading" id="sut-nG-pX9"/>
+                            <constraint firstAttribute="trailing" secondItem="G4c-z6-ubK" secondAttribute="trailing" id="tOJ-U7-Jg5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rP5-uG-o3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dh3-hN-PYc">
+                    <connections>
+                        <action selector="dismissDetail:" destination="5kg-Sc-hA9" id="ZRL-xr-a1a"/>
+                        <outlet property="delegate" destination="5e9-BT-3uJ" id="oJV-gj-UFC"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="506" y="726"/>
         </scene>
     </scenes>
 </document>

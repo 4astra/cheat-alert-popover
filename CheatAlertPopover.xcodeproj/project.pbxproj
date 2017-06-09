@@ -15,6 +15,7 @@
 		EB981F751EEA7F8C003DF354 /* HelloAutolayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB981F741EEA7F8C003DF354 /* HelloAutolayoutTests.swift */; };
 		EB981F801EEA7F8C003DF354 /* HelloAutolayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB981F7F1EEA7F8C003DF354 /* HelloAutolayoutUITests.swift */; };
 		EB981F8E1EEA8001003DF354 /* DetailViewCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB981F8D1EEA8001003DF354 /* DetailViewCtr.swift */; };
+		EB981F901EEA8BF6003DF354 /* Detail2ViewCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB981F8F1EEA8BF6003DF354 /* Detail2ViewCtr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EB981F7F1EEA7F8C003DF354 /* HelloAutolayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloAutolayoutUITests.swift; sourceTree = "<group>"; };
 		EB981F811EEA7F8C003DF354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB981F8D1EEA8001003DF354 /* DetailViewCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewCtr.swift; sourceTree = "<group>"; };
+		EB981F8F1EEA8BF6003DF354 /* Detail2ViewCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail2ViewCtr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				EB981F681EEA7F8C003DF354 /* LaunchScreen.storyboard */,
 				EB981F6B1EEA7F8C003DF354 /* Info.plist */,
 				EB981F8D1EEA8001003DF354 /* DetailViewCtr.swift */,
+				EB981F8F1EEA8BF6003DF354 /* Detail2ViewCtr.swift */,
 			);
 			path = HelloAutolayout;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB981F901EEA8BF6003DF354 /* Detail2ViewCtr.swift in Sources */,
 				EB981F8E1EEA8001003DF354 /* DetailViewCtr.swift in Sources */,
 				EB981F621EEA7F8C003DF354 /* ViewController.swift in Sources */,
 				EB981F601EEA7F8C003DF354 /* AppDelegate.swift in Sources */,
@@ -511,6 +515,7 @@
 				EB981F861EEA7F8C003DF354 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB981F871EEA7F8C003DF354 /* Build configuration list for PBXNativeTarget "CheatAlertPopoverTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +524,7 @@
 				EB981F891EEA7F8C003DF354 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB981F8A1EEA7F8C003DF354 /* Build configuration list for PBXNativeTarget "CheatAlertPopoverUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +533,7 @@
 				EB981F8C1EEA7F8C003DF354 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
